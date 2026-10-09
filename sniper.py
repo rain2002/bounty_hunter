@@ -4,15 +4,20 @@ import requests
 import json
 import time
 
+from datetime import datetime, timedelta
+
 def get_github_bounties():
     print("Searching GitHub for bounties...")
     url = "https://api.github.com/search/issues"
     
+    # Only look for bounties created in the last 4 hours (since the script runs every 3 hours)
+    cutoff_time = (datetime.utcnow() - timedelta(hours=4)).strftime('%Y-%m-%dT%H:%M:%S')
+    
     queries = [
-        "label:bounty state:open language:python",
-        "label:bounty state:open language:javascript",
-        "label:paid state:open language:python",
-        "label:paid state:open language:javascript"
+        f"label:bounty state:open language:python created:>={cutoff_time}",
+        f"label:bounty state:open language:javascript created:>={cutoff_time}",
+        f"label:paid state:open language:python created:>={cutoff_time}",
+        f"label:paid state:open language:javascript created:>={cutoff_time}"
     ]
     
     results = []
@@ -50,8 +55,12 @@ def get_reddit_jobs():
                 post = child.get("data", {})
                 title = post.get("title", "").lower()
                 body = post.get("selftext", "").lower()
+                created_utc = post.get("created_utc", 0)
                 
-                if any(kw in title or kw in body for kw in keywords):
+                # Check if it was created in the last 4 hours
+                cutoff_timestamp = (datetime.utcnow() - timedelta(hours=4)).timestamp()
+                
+                if created_utc >= cutoff_timestamp and any(kw in title or kw in body for kw in keywords):
                     results.append({
                         "source": f"Reddit (r/{post.get('subreddit')})",
                         "title": post.get("title"),
