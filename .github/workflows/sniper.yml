@@ -2,8 +2,8 @@ name: Bounty Sniper
 
 on:
   schedule:
-    # Runs at 14:00 UTC every day, which is 9:00 AM Central Time
-    - cron: '0 14 * * *'
+    # Runs every 3 hours
+    - cron: '0 */3 * * *'
   workflow_dispatch: # Allows you to trigger it manually from the GitHub UI
 
 jobs:
