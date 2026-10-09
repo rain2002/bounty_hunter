@@ -64,27 +64,36 @@ def get_reddit_jobs():
 
 import os
 
-def send_discord_alert(results, webhook_url):
-    if not webhook_url:
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+def send_email_alert(results, user, password, to_email):
+    if not user or not password or not to_email:
         return
         
-    print("Sending alerts to Discord...")
-    message = f"🎯 **Bounty Sniper found {len(results)} potential bounties!**\n\n"
+    print("Sending alerts via Gmail...")
     
-    for res in results[:10]: # Limit to 10 to avoid Discord message length limits
-        message += f"**[{res['source']}]** {res['title']}\n<{res['url']}>\n\n"
+    msg = MIMEMultipart()
+    msg['From'] = user
+    msg['To'] = to_email
+    msg['Subject'] = f"🎯 Bounty Sniper: {len(results)} new bounties!"
+    
+    body = f"Bounty Sniper found {len(results)} potential bounties!\n\n"
+    for res in results:
+        body += f"[{res['source']}] {res['title']}\n{res['url']}\n\n"
         
-    if len(results) > 10:
-        message += f"...and {len(results) - 10} more!"
-        
+    msg.attach(MIMEText(body, 'plain', 'utf-8'))
+    
     try:
-        resp = requests.post(webhook_url, json={"content": message})
-        if resp.status_code == 204:
-            print("Discord alert sent successfully.")
-        else:
-            print(f"Failed to send Discord alert: {resp.status_code}")
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(user, password)
+        server.send_message(msg)
+        server.quit()
+        print("Email alert sent successfully.")
     except Exception as e:
-        print(f"Error sending to Discord: {e}")
+        print(f"Error sending email: {e}")
 
 def main():
     print("=" * 50)
@@ -111,12 +120,15 @@ def main():
             print(f"[{res['source']}] {res['title']}")
             print(f"Link: {res['url']}\n")
             
-        # Send Discord Alert
-        webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
-        if webhook_url:
-            send_discord_alert(unique_results, webhook_url)
+        # Send Email Alert
+        gmail_user = os.environ.get("GMAIL_USER")
+        gmail_pass = os.environ.get("GMAIL_APP_PASSWORD")
+        to_email = os.environ.get("TO_EMAIL")
+        
+        if gmail_user and gmail_pass and to_email:
+            send_email_alert(unique_results, gmail_user, gmail_pass, to_email)
         else:
-            print("\n(To enable Discord alerts, set the DISCORD_WEBHOOK_URL environment variable.)")
+            print("\n(To enable email alerts, set GMAIL_USER, GMAIL_APP_PASSWORD, and TO_EMAIL environment variables.)")
 
 if __name__ == "__main__":
     main()
