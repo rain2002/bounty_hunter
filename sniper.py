@@ -13,12 +13,12 @@ def get_github_bounties():
     # Only look for bounties created in the last 4 hours (since the script runs every 3 hours)
     cutoff_time = (datetime.utcnow() - timedelta(hours=4)).strftime('%Y-%m-%dT%H:%M:%S')
     
-    languages = ["python", "javascript", "typescript", "go", "rust", "java", "c++"]
-    labels = ["bounty", "paid"]
+    languages = ["python", "javascript", "typescript", "go", "rust", "java", "c++", "solidity"]
+    terms = ["bounty", "hiring", "freelance"]
     
     queries = [
-        f"label:{label} state:open language:{lang} created:>={cutoff_time}"
-        for label in labels for lang in languages
+        f"{term} state:open language:{lang} created:>={cutoff_time}"
+        for term in terms for lang in languages
     ]
     
     results = []
@@ -46,7 +46,10 @@ def get_reddit_jobs():
     url = f"https://www.reddit.com/r/{subreddits}/new.json"
     
     results = []
-    keywords = ["script", "python", "scrape", "developer", "bot", "app", "automation", "backend", "website"]
+    keywords = [
+        "script", "python", "scrape", "developer", "bot", "app", "automation", "backend", "website",
+        "ai", "llm", "chatgpt", "openai", "react", "nextjs", "web3", "crypto", "smart contract", "api"
+    ]
     
     try:
         resp = requests.get(url, headers=headers)
