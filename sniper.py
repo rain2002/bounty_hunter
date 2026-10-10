@@ -17,8 +17,7 @@ def get_github_bounties():
     # restriction entirely so it catches ALL tech stacks (React, Rust, Web3, Python, etc.)
     queries = [
         f"label:bounty state:open created:>={cutoff_time}",
-        f"label:paid state:open created:>={cutoff_time}",
-        f'"paid task" state:open created:>={cutoff_time}'
+        f"label:paid state:open created:>={cutoff_time}"
     ]
     
     results = []
