@@ -13,12 +13,12 @@ def get_github_bounties():
     # Only look for bounties created in the last 4 hours (since the script runs every 3 hours)
     cutoff_time = (datetime.utcnow() - timedelta(hours=4)).strftime('%Y-%m-%dT%H:%M:%S')
     
-    languages = ["python", "javascript", "typescript", "go", "rust", "java", "c++", "solidity"]
-    terms = ["bounty", "hiring", "freelance"]
-    
+    # We enforce strict labels to guarantee it's a bounty, but we remove the language 
+    # restriction entirely so it catches ALL tech stacks (React, Rust, Web3, Python, etc.)
     queries = [
-        f"{term} state:open language:{lang} created:>={cutoff_time}"
-        for term in terms for lang in languages
+        f"label:bounty state:open created:>={cutoff_time}",
+        f"label:paid state:open created:>={cutoff_time}",
+        f'"paid task" state:open created:>={cutoff_time}'
     ]
     
     results = []
@@ -64,7 +64,12 @@ def get_reddit_jobs():
                 # Check if it was created in the last 4 hours
                 cutoff_timestamp = (datetime.utcnow() - timedelta(hours=4)).timestamp()
                 
-                if created_utc >= cutoff_timestamp and any(kw in title or kw in body for kw in keywords):
+                # Enforce that it mentions money/payment AND a tech keyword
+                money_keywords = ["$", "pay", "bounty", "usd", "crypto", "hire", "budget"]
+                has_tech = any(kw in title or kw in body for kw in keywords)
+                has_money = any(kw in title or kw in body for kw in money_keywords)
+                
+                if created_utc >= cutoff_timestamp and has_tech and has_money:
                     results.append({
                         "source": f"Reddit (r/{post.get('subreddit')})",
                         "title": post.get("title"),
