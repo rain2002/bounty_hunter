@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Scratch scripts
+*.tmp
+bounty-agent-dryrun/
+
+# Sub projects & cloned repos
+discord-bot/
+omi/
+splurt/
+jupiter-redesign/
