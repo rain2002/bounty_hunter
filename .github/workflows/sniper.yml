@@ -6,6 +6,9 @@ on:
     - cron: '0 */3 * * *'
   workflow_dispatch: # Allows you to trigger it manually from the GitHub UI
 
+permissions:
+  contents: write
+
 jobs:
   run-sniper:
     runs-on: ubuntu-latest
@@ -29,4 +32,12 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python sniper.py
+
+      - name: Commit and push updated seen bounties
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen_bounties.json
+          git diff --staged --quiet || (git commit -m "chore: sync seen_bounties.json [skip ci]" && git push)

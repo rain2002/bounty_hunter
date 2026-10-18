@@ -1,0 +1,62 @@
+{
+  "https://github.com/sybil-solutions/local-ai-registry/issues/318": {
+    "source": "GitHub (sybil-solutions/local-ai-registry)",
+    "title": "Paid recipe proposal: RTX 3080 20 GiB memory variant",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22174": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(database): sanitize identifiers, harden etag matching, and add client injection to action items cache ($50 proposed)",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22168": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(database): sanitize identifiers, enforce comment length bounds, and add client injection to csat ($50 proposed)",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22162": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(database): sanitize identifiers, add tolerant reads, and client injection to support audit ($50 proposed)",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22144": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(database): sanitize identifiers, add stream error boundaries, and client injection to tasks ($50 proposed)",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/travel-boost-for-bp26": {
+    "source": "Superteam Earn",
+    "title": "[6000 USDG] Travel boost: Create Content for Breakpoint 2026",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/bring-your-friends-to-segmento": {
+    "source": "Superteam Earn",
+    "title": "[500 USDG] Bring Your Friends to Segmento",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/redesign-your-favourite-app-on-solana": {
+    "source": "Superteam Earn",
+    "title": "[1500 USDC] Redesign Your Favourite App on Solana",
+    "first_seen": "2026-10-18T22:10:29.322030+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/launch-and-trade-on-daejin-write-a-twitter-thread-and-create-a-market": {
+    "source": "Superteam Earn",
+    "title": "[620 USDC] Launch & Trade on Daejin: Write a Twitter Thread and Create a Market",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/rumbo-a-breakpoint-2026-gana-una-entrada-y-apoyo-para-tu-viaje": {
+    "source": "Superteam Earn",
+    "title": "[5000 USDG] Rumbo a Breakpoint 2026: gana una entrada y apoyo para tu viaje",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/chimp-on-metaplex": {
+    "source": "Superteam Earn",
+    "title": "[500 USDC] Write a thread on $CHIMP Fair Launch - Part 1",
+    "first_seen": "2026-10-18T15:13:44.192921+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/create-content-on-premier-league-predictions-with-worm": {
+    "source": "Superteam Earn",
+    "title": "[500 USDC] Create Content on Premier League Predictions with worm \ud83e\udeb1\u26bd",
+    "first_seen": "2026-10-18T22:10:29.322030+00:00"
+  }
+}
