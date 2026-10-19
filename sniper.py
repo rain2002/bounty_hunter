@@ -39,7 +39,8 @@ BLACKLIST_USERS = {
     'thirdshiftworks', 'incrediblespacecow', 'bounty-watcher', 'bounty-plaza',
     'gospelsam019', 'neatlogs', 'xaviercallens', 'teslims2', 'axalnetwork',
     'myzubster-ecosystem', 'credenceorg', 'dmavs412', '96loveslife',
-    'neziahtech', 'riteshekbote', 'auscaster', 'rroland10', 'guyue-arch'
+    'neziahtech', 'riteshekbote', 'auscaster', 'rroland10', 'guyue-arch',
+    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek'
 }
 
 BLACKLIST_TITLE_KEYWORDS = [
@@ -52,7 +53,9 @@ BLACKLIST_TITLE_KEYWORDS = [
     'intake', '[intake', '测评报告', '测评', '体验快测', '增量测评',
     'radar', 'monetization-runtime', 's1 handoff', 'handoff', 'coordinator state',
     'cve disclosure', 'security.md', 'bug bounty scope', 'bounty-escrow',
-    'proposal for @', '$hive', 'hivemind', 'claim your bounty spot'
+    'proposal for @', '$hive', 'hivemind', 'claim your bounty spot',
+    'proposal', 'proposed', 'bounty proposal', 'outbound link', 'link report',
+    'broken link', 'dsh-', 'dsh_'
 ]
 
 repo_star_cache = {}
@@ -74,14 +77,17 @@ def get_repo_stars(repo_full_name, headers):
 def is_valid_github_bounty(item, headers):
     repo = '/'.join(item.get('repository_url', '').split('/')[-2:])
     owner = repo.split('/')[0].lower() if '/' in repo else ''
+    author = (item.get('user') or {}).get('login', '').lower()
     title = item.get('title', '').lower()
     body = (item.get('body') or '').lower()
 
-    # 1. Filter blacklisted user accounts & bot mirrors
+    # 1. Filter blacklisted user accounts & bot mirrors (owner or issue author)
     if owner in BLACKLIST_USERS:
         return False, f"Blacklisted owner: {owner}"
+    if author in BLACKLIST_USERS:
+        return False, f"Blacklisted author: {author}"
 
-    # 2. Filter blacklisted keywords in title
+    # 2. Filter blacklisted keywords in title (proposals, reports, junk)
     if any(kw in title for kw in BLACKLIST_TITLE_KEYWORDS):
         return False, "Blacklisted keyword in title"
 
@@ -90,7 +96,13 @@ def is_valid_github_bounty(item, headers):
         return False, "Non-cash points/unlisted token reward"
 
     # 4. Check for verified bot indicators (Algora, Polar, Opire)
-    has_escrow_bot = any(bot in body for bot in ['console.algora.io', 'algora-io', 'polar.sh', 'app.opire.dev'])
+    has_escrow_bot = (
+        'console.algora.io/challenges/' in body or
+        'algora[bot]' in body or
+        'algora-io' in body or
+        ('polar.sh/' in body and any(k in body for k in ['pledge', 'reward', 'polar[bot]', 'polar-sh'])) or
+        ('app.opire.dev/' in body and any(k in body for k in ['bounty', 'opire[bot]']))
+    )
 
     # 5. Quality gate: repository must have >= 20 stars (unless verified escrow bot is present)
     stars = get_repo_stars(repo, headers)
