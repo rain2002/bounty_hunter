@@ -63,5 +63,10 @@
     "source": "GitHub (vllm-project/vllm-omni)",
     "title": "[Bug]: [Flaky],READY CI failed - tests/e2e/online_serving/test_minicpmo_4_5_duplex.py::test_duplex_websocket_protocol_smoke[three-stage-single-gpu] - AssertionError: duplex open timed out for session",
     "first_seen": "2026-10-19T02:27:51.846687+00:00"
+  },
+  "https://github.com/taxueseek/dsh-files/issues/17": {
+    "source": "GitHub (taxueseek/dsh-files)",
+    "title": "[Bug][P2] dsh-files 0.6.0\uff1aLoader \u79fb\u9664\u4e0d\u6ce8\u9500\u9644\u4ef6\u8def\u7531\uff0c\u91cd\u8f7d\u540e\u65e7\u914d\u7f6e\u7ee7\u7eed\u751f\u6548",
+    "first_seen": "2026-10-19T08:17:24.928678+00:00"
   }
 }
