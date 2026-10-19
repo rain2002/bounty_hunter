@@ -68,5 +68,70 @@
     "source": "GitHub (taxueseek/dsh-files)",
     "title": "[Bug][P2] dsh-files 0.6.0\uff1aLoader \u79fb\u9664\u4e0d\u6ce8\u9500\u9644\u4ef6\u8def\u7531\uff0c\u91cd\u8f7d\u540e\u65e7\u914d\u7f6e\u7ee7\u7eed\u751f\u6548",
     "first_seen": "2026-10-19T08:17:24.928678+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22540": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/live_owner_continuity.py against invalid IDs, non-finite continuity values, and malformed snapshots ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22534": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/review_exact_undo.py against non-dict intermediate paths, None generations, and malformed fences ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22529": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/dream_dirty.py against omitted default arguments, blank IDs, and unsafe refs ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22526": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden desktop_prompts router against malformed Firestore prompt documents and store errors ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22524": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/dream_history.py against invalid UIDs, unsafe cursor keys, boolean limits, and malformed aggregations ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22522": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/dream_canary.py against malformed snapshots, invalid UIDs, and non-numeric failure counts ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22519": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/import_quotas.py against unsafe Redis hash tags, invalid amounts, and malformed env limits ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22515": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/locked_content.py against boolean limits, empty updates, invalid UIDs, and stream errors ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22511": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/owner_profile_updates.py against invalid UIDs, non-finite embeddings, and malformed snapshots ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22509": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Harden backend/database/speaker_learning.py against malformed snapshots, invalid IDs, and non-finite seconds ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22506": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(database): sanitize identifiers, add store failure boundaries, and add client injection to import_jobs ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22499": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(conversations): coerce ISO strings and naive timestamps in meeting context pack prior meetings sorting ($50 proposed)",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/commonworld-one/commonworld/issues/11": {
+    "source": "GitHub (commonworld-one/commonworld)",
+    "title": "Outbound link report",
+    "first_seen": "2026-10-19T16:01:45.396237+00:00"
   }
 }
