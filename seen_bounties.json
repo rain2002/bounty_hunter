@@ -58,5 +58,10 @@
     "source": "Superteam Earn",
     "title": "[500 USDC] Create Content on Premier League Predictions with worm \ud83e\udeb1\u26bd",
     "first_seen": "2026-10-18T22:10:29.322030+00:00"
+  },
+  "https://github.com/vllm-project/vllm-omni/issues/9072": {
+    "source": "GitHub (vllm-project/vllm-omni)",
+    "title": "[Bug]: [Flaky],READY CI failed - tests/e2e/online_serving/test_minicpmo_4_5_duplex.py::test_duplex_websocket_protocol_smoke[three-stage-single-gpu] - AssertionError: duplex open timed out for session",
+    "first_seen": "2026-10-19T02:27:51.846687+00:00"
   }
 }
