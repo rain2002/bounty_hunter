@@ -133,5 +133,40 @@
     "source": "GitHub (commonworld-one/commonworld)",
     "title": "Outbound link report",
     "first_seen": "2026-10-19T16:01:45.396237+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22638": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(conversations): normalize mixed naive, aware, and ISO timestamps in find_neighbor ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22636": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(calendar): normalize naive dateTime strings and guard None values in parse_event_times ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22620": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(entity-pages): normalize mixed naive, aware, and ISO conversation timestamps ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22614": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(calendar): normalize naive start timestamps and guard malformed start dicts in multi-window sort ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22611": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] fix(memory): normalize mixed naive and aware evidence timestamps when ordering capture devices ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22598": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Fix TypeError, KeyError, and ValueError on mixed timestamps in proactivity producers ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22582": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "[Bounty proposal] Fix TypeError and skipped ISO bounds when folding and replaying memory ledger commits ($50 proposed)",
+    "first_seen": "2026-10-19T21:52:16.440004+00:00"
   }
 }
