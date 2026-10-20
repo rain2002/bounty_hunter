@@ -193,5 +193,10 @@
     "source": "GitHub (agentscope-ai/ReMe)",
     "title": "[DSH plugin] auto_memory backlog is unbounded while ReMe is down, and sessions that ended during the outage are never retried until host shutdown",
     "first_seen": "2026-10-20T18:50:28.837709+00:00"
+  },
+  "https://github.com/fitzforge/polestar/issues/618": {
+    "source": "GitHub (fitzforge/polestar)",
+    "title": "Add quest if you keep the Ban'ethil path.",
+    "first_seen": "2026-10-20T23:32:56.689050+00:00"
   }
 }
