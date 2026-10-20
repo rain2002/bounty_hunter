@@ -168,5 +168,15 @@
     "source": "GitHub (BasedHardware/omi)",
     "title": "[Bounty proposal] Fix TypeError and skipped ISO bounds when folding and replaying memory ledger commits ($50 proposed)",
     "first_seen": "2026-10-19T21:52:16.440004+00:00"
+  },
+  "https://github.com/sybil-solutions/local-ai-registry/issues/328": {
+    "source": "GitHub (sybil-solutions/local-ai-registry)",
+    "title": "Bounty $50: recipe for RTX 3070 Ti Laptop GPU",
+    "first_seen": "2026-10-20T08:02:29.933123+00:00"
+  },
+  "https://github.com/Tarsnap/scrypt/issues/446": {
+    "source": "GitHub (Tarsnap/scrypt)",
+    "title": "scrypt.1: clarify resource-limit defaults, 1 MiB floor, and memory scope",
+    "first_seen": "2026-10-20T08:02:29.933123+00:00"
   }
 }
