@@ -178,5 +178,20 @@
     "source": "GitHub (Tarsnap/scrypt)",
     "title": "scrypt.1: clarify resource-limit defaults, 1 MiB floor, and memory scope",
     "first_seen": "2026-10-20T08:02:29.933123+00:00"
+  },
+  "https://github.com/tenstorrent/tt-metal/issues/61736": {
+    "source": "GitHub (tenstorrent/tt-metal)",
+    "title": "ttnn.typecast to uint32 collapses the entire [2^31, 2^32) range to 2147483648 (fp32/bf16 inputs)",
+    "first_seen": "2026-10-20T18:50:28.837709+00:00"
+  },
+  "https://github.com/agentscope-ai/ReMe/issues/651": {
+    "source": "GitHub (agentscope-ai/ReMe)",
+    "title": "[DSH plugin] endpoint with user:pass@ is accepted but every request fails, and the password is echoed into the reme_search tool output, the status snapshot and the warn log",
+    "first_seen": "2026-10-20T18:50:28.837709+00:00"
+  },
+  "https://github.com/agentscope-ai/ReMe/issues/650": {
+    "source": "GitHub (agentscope-ai/ReMe)",
+    "title": "[DSH plugin] auto_memory backlog is unbounded while ReMe is down, and sessions that ended during the outage are never retried until host shutdown",
+    "first_seen": "2026-10-20T18:50:28.837709+00:00"
   }
 }
