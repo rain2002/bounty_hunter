@@ -198,5 +198,10 @@
     "source": "GitHub (fitzforge/polestar)",
     "title": "Add quest if you keep the Ban'ethil path.",
     "first_seen": "2026-10-20T23:32:56.689050+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/22972": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "Python CLI: concurrent profile logins silently lose one credential",
+    "first_seen": "2026-10-21T08:07:58.188796+00:00"
   }
 }
