@@ -203,5 +203,20 @@
     "source": "GitHub (BasedHardware/omi)",
     "title": "Python CLI: concurrent profile logins silently lose one credential",
     "first_seen": "2026-10-21T08:07:58.188796+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/23032": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "Android brake stage: declare BRAKE_NOTES_LINE and harden '; ' replace-last",
+    "first_seen": "2026-10-21T14:14:55.841986+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2176": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Native getTransferableAmount subtracts existential deposit twice",
+    "first_seen": "2026-10-21T14:14:55.841986+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2174": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Hydration calculateFee passes raw units as a decimal string, so the fee is estimated on an oversized trade",
+    "first_seen": "2026-10-21T14:14:55.841986+00:00"
   }
 }
