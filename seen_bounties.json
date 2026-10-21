@@ -218,5 +218,30 @@
     "source": "GitHub (paraspell/xcm-tools)",
     "title": "[Bug bounty] Hydration calculateFee passes raw units as a decimal string, so the fee is estimated on an oversized trade",
     "first_seen": "2026-10-21T14:14:55.841986+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2181": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Swap: local-transfer getTransferableAmount subtracts the native existential deposit twice",
+    "first_seen": "2026-10-21T19:02:37.455996+00:00"
+  },
+  "https://github.com/ZigZagBoi1/PS5-14.10-Research/issues/78": {
+    "source": "GitHub (ZigZagBoi1/PS5-14.10-Research)",
+    "title": "Ai to find bug",
+    "first_seen": "2026-10-21T19:02:37.455996+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13455": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "PAYMENT: USDC on Base/Arbitrum wallet (whyst0ne deliveries #13403 - #13452)",
+    "first_seen": "2026-10-21T19:02:37.455996+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2178": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] XCM API drops keepAlive false for same-chain transfers",
+    "first_seen": "2026-10-21T19:02:37.455996+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/multihopper-build-and-route-challenge-up-to-dollar50000-revenue-share-1": {
+    "source": "Superteam Earn",
+    "title": "[5000 USDC] MultiHopper Build & Route Challenge | Up to $50,000 + Revenue Share",
+    "first_seen": "2026-10-21T19:02:37.455996+00:00"
   }
 }
