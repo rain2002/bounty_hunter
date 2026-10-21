@@ -243,5 +243,10 @@
     "source": "Superteam Earn",
     "title": "[5000 USDC] MultiHopper Build & Route Challenge | Up to $50,000 + Revenue Share",
     "first_seen": "2026-10-21T19:02:37.455996+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13510": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "feat(utils): implement deterministic slugify utility for URL slugs (ref #11866, #743)",
+    "first_seen": "2026-10-21T23:49:03.726680+00:00"
   }
 }
