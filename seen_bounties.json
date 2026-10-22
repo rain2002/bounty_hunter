@@ -248,5 +248,15 @@
     "source": "GitHub (SecureBananaLabs/bug-bounty)",
     "title": "feat(utils): implement deterministic slugify utility for URL slugs (ref #11866, #743)",
     "first_seen": "2026-10-21T23:49:03.726680+00:00"
+  },
+  "https://github.com/lambdaclass/stabileo/issues/562": {
+    "source": "GitHub (lambdaclass/stabileo)",
+    "title": "CIRSOC 201 check (cirsoc201_check / certify_cirsoc201_members) equates unfactored nominal Pn(c) to factored Nu without phi and omits axial capacity check phi*Pn,max (overstating phi*Mn by >50% and certifying columns loaded above phi*Pn,max)",
+    "first_seen": "2026-10-22T08:07:35.454554+00:00"
+  },
+  "https://github.com/lambdaclass/stabileo/issues/561": {
+    "source": "GitHub (lambdaclass/stabileo)",
+    "title": "ACI 318-19 shear & P-M checks (rc_check / certify_rc_members) ignore axial tension on Vc, omit 420 MPa fyt and 8.3 MPa sqrt(f'c) caps, and mis-account displaced concrete in P-M interaction (overstating capacity by >37% and issuing false certified_ok)",
+    "first_seen": "2026-10-22T08:07:35.454554+00:00"
   }
 }
