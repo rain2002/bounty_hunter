@@ -258,5 +258,25 @@
     "source": "GitHub (lambdaclass/stabileo)",
     "title": "ACI 318-19 shear & P-M checks (rc_check / certify_rc_members) ignore axial tension on Vc, omit 420 MPa fyt and 8.3 MPa sqrt(f'c) caps, and mis-account displaced concrete in P-M interaction (overstating capacity by >37% and issuing false certified_ok)",
     "first_seen": "2026-10-22T08:07:35.454554+00:00"
+  },
+  "https://github.com/sybil-solutions/local-ai-recipe-kit/issues/37": {
+    "source": "GitHub (sybil-solutions/local-ai-recipe-kit)",
+    "title": "LocalMaxxing export invents engine and decoding metadata (paid-scope inquiry)",
+    "first_seen": "2026-10-22T14:14:15.974116+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13516": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "feat(utils): implement prototype-pollution safe deepMerge utility (ref #11873, #743)",
+    "first_seen": "2026-10-22T14:14:15.974116+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/inside-the-block-how-solana-validators-order-transactions": {
+    "source": "Superteam Earn",
+    "title": "[2500 USDC] Inside the Block: How Solana Validators Order Transactions",
+    "first_seen": "2026-10-22T14:14:15.974116+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/mozaikpay-video-chile-colombia": {
+    "source": "Superteam Earn",
+    "title": "[500 USDC] Show us how you use MozaikPay",
+    "first_seen": "2026-10-22T14:14:15.974116+00:00"
   }
 }
