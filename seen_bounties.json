@@ -278,5 +278,25 @@
     "source": "Superteam Earn",
     "title": "[500 USDC] Show us how you use MozaikPay",
     "first_seen": "2026-10-22T14:14:15.974116+00:00"
+  },
+  "https://github.com/SecOpsNews/news/issues/75470": {
+    "source": "GitHub (SecOpsNews/news)",
+    "title": "[RegisterSec] Max-severity GitLab bug allows remote code execution over 12 years of releases",
+    "first_seen": "2026-10-22T23:47:23.312244+00:00"
+  },
+  "https://github.com/ROAM-game-org/road-machiners/issues/905": {
+    "source": "GitHub (ROAM-game-org/road-machiners)",
+    "title": "Replace knockout and get-item contracts with procurement contracts",
+    "first_seen": "2026-10-22T23:47:23.312244+00:00"
+  },
+  "https://github.com/litang9/big_model_radar/issues/593": {
+    "source": "GitHub (litang9/big_model_radar)",
+    "title": "\ud83c\udf10 AI \u5b98\u65b9\u5185\u5bb9\u8ffd\u8e2a\u62a5\u544a 2026-10-23",
+    "first_seen": "2026-10-22T23:47:23.312244+00:00"
+  },
+  "https://github.com/tenstorrent/tt-metal/issues/62133": {
+    "source": "GitHub (tenstorrent/tt-metal)",
+    "title": "ttnn unary ops silently accept INT8 TILE input and return garbage; the #56980 integer-input gate skips INT8",
+    "first_seen": "2026-10-22T23:47:23.312244+00:00"
   }
 }
