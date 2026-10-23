@@ -298,5 +298,20 @@
     "source": "GitHub (tenstorrent/tt-metal)",
     "title": "ttnn unary ops silently accept INT8 TILE input and return garbage; the #56980 integer-input gate skips INT8",
     "first_seen": "2026-10-22T23:47:23.312244+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13524": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "feat(utils): implement human-readable file size formatter formatBytes (ref #11876, #743)",
+    "first_seen": "2026-10-23T13:57:05.186474+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2202": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] getBalance resolves native balance by symbol alone \u2014 15 assets across 5 chains, and the same predicate in isSufficient misjudges transfer sufficiency",
+    "first_seen": "2026-10-23T13:57:05.186474+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13522": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "fix(api): sanitize uploaded original filenames in upload metadata response (ref #5859, #743)",
+    "first_seen": "2026-10-23T13:57:05.186474+00:00"
   }
 }
