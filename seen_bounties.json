@@ -333,5 +333,25 @@
     "source": "Superteam Earn",
     "title": "[None USDC] Motion Graphics Designer - Kimia Product Launch Film for X",
     "first_seen": "2026-10-23T18:48:21.448431+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13611": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "Lack of validation and bounds checking on notification creation endpoint",
+    "first_seen": "2026-10-23T23:41:07.011595+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13643": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "Lack of validation, bounds checks, and error handling on user creation endpoint",
+    "first_seen": "2026-10-23T23:41:07.011595+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13608": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "Lack of validation and bounds checking on message creation endpoint",
+    "first_seen": "2026-10-23T23:41:07.011595+00:00"
+  },
+  "https://github.com/SecureBananaLabs/bug-bounty/issues/13604": {
+    "source": "GitHub (SecureBananaLabs/bug-bounty)",
+    "title": "Lack of validation and bounds checking on review creation endpoint",
+    "first_seen": "2026-10-23T23:41:07.011595+00:00"
   }
 }
