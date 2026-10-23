@@ -40,7 +40,7 @@ BLACKLIST_USERS = {
     'gospelsam019', 'neatlogs', 'xaviercallens', 'teslims2', 'axalnetwork',
     'myzubster-ecosystem', 'credenceorg', 'dmavs412', '96loveslife',
     'neziahtech', 'riteshekbote', 'auscaster', 'rroland10', 'guyue-arch',
-    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek', 'litang9', 'secopsnews', 'roam-game-org'
+    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek', 'litang9', 'secopsnews', 'roam-game-org', 'securebananalabs', 'era-projects', 'xhtoken', 'openobserve'
 }
 
 BLACKLIST_TITLE_KEYWORDS = [
