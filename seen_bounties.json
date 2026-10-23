@@ -313,5 +313,25 @@
     "source": "GitHub (SecureBananaLabs/bug-bounty)",
     "title": "fix(api): sanitize uploaded original filenames in upload metadata response (ref #5859, #743)",
     "first_seen": "2026-10-23T13:57:05.186474+00:00"
+  },
+  "https://github.com/ERA-Projects/era-project-eng/issues/960": {
+    "source": "GitHub (ERA-Projects/era-project-eng)",
+    "title": "Crash in [Adventure Map] dialog EIP: Hd_tc2.F1A7. Code: C0000005",
+    "first_seen": "2026-10-23T18:48:21.448431+00:00"
+  },
+  "https://github.com/XHToken/Spark-X2.6/issues/16": {
+    "source": "GitHub (XHToken/Spark-X2.6)",
+    "title": "HER Hack-Astron #7 | Spark-X2.6 Open Source AI for Good Challenge\uff5c\u516c\u76ca\u5e94\u7528\u573a\u666f\u6311\u6218\u8d5b",
+    "first_seen": "2026-10-23T18:48:21.448431+00:00"
+  },
+  "https://github.com/openobserve/openobserve/issues/15714": {
+    "source": "GitHub (openobserve/openobserve)",
+    "title": "Streams / Ingestion: stream names longer than the DB column limit fail with a database error instead of a clear validation error",
+    "first_seen": "2026-10-23T18:48:21.448431+00:00"
+  },
+  "https://earn.superteam.fun/listings/project/motion-graphics-designer-kimia-product-launch-film-for-x": {
+    "source": "Superteam Earn",
+    "title": "[None USDC] Motion Graphics Designer - Kimia Product Launch Film for X",
+    "first_seen": "2026-10-23T18:48:21.448431+00:00"
   }
 }
