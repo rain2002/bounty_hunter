@@ -353,5 +353,10 @@
     "source": "GitHub (SecureBananaLabs/bug-bounty)",
     "title": "Lack of validation and bounds checking on review creation endpoint",
     "first_seen": "2026-10-23T23:41:07.011595+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2215": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] sdk-dedot computeOriginFee reads two different event shapes in one loop \u2014 AssetConversion branch never fires",
+    "first_seen": "2026-10-24T02:34:45.101071+00:00"
   }
 }
