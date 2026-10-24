@@ -358,5 +358,15 @@
     "source": "GitHub (paraspell/xcm-tools)",
     "title": "[Bug bounty] sdk-dedot computeOriginFee reads two different event shapes in one loop \u2014 AssetConversion branch never fires",
     "first_seen": "2026-10-24T02:34:45.101071+00:00"
+  },
+  "https://github.com/BasedHardware/omi/issues/23467": {
+    "source": "GitHub (BasedHardware/omi)",
+    "title": "Question: Contributor compensation / bounty program status",
+    "first_seen": "2026-10-24T07:45:53.355317+00:00"
+  },
+  "https://github.com/fringe4life/larder/issues/24": {
+    "source": "GitHub (fringe4life/larder)",
+    "title": "Polar hosted packs: Starter 5%+50\u00a2 not 4%; Credit DO webhook",
+    "first_seen": "2026-10-24T07:45:53.355317+00:00"
   }
 }
