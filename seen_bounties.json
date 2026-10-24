@@ -368,5 +368,10 @@
     "source": "GitHub (fringe4life/larder)",
     "title": "Polar hosted packs: Starter 5%+50\u00a2 not 4%; Credit DO webhook",
     "first_seen": "2026-10-24T07:45:53.355317+00:00"
+  },
+  "https://github.com/Bendako/next-starter-script/issues/14": {
+    "source": "GitHub (Bendako/next-starter-script)",
+    "title": "[Hosted MCP] Polar adapter + webhooks",
+    "first_seen": "2026-10-24T17:43:43.286893+00:00"
   }
 }
