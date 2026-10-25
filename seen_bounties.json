@@ -354,6 +354,7 @@
     "title": "Lack of validation and bounds checking on review creation endpoint",
     "first_seen": "2026-10-23T23:41:07.011595+00:00"
   },
+<<<<<<< Updated upstream
   "https://github.com/paraspell/xcm-tools/issues/2215": {
     "source": "GitHub (paraspell/xcm-tools)",
     "title": "[Bug bounty] sdk-dedot computeOriginFee reads two different event shapes in one loop \u2014 AssetConversion branch never fires",
@@ -418,5 +419,31 @@
     "source": "GitHub (paraspell/xcm-tools)",
     "title": "[Bug bounty] PAPI transform() mangles string numeric currency_id in multi-key objects",
     "first_seen": "2026-10-25T17:59:46.653859+00:00"
+=======
+  "https://github.com/dotnet/announcements/issues/495": {
+    "source": "GitHub (dotnet/announcements)",
+    "title": "Microsoft Security Advisory CVE-2026-114148 | .NET Elevation of Privilege Vulnerability",
+    "first_seen": "2026-10-25T19:15:59.040612+00:00"
+  },
+  "https://github.com/dotnet/announcements/issues/494": {
+    "source": "GitHub (dotnet/announcements)",
+    "title": "Microsoft Security Advisory CVE-2026-111497 | .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+    "first_seen": "2026-10-25T19:15:59.040612+00:00"
+  },
+  "https://github.com/dotnet/runtime/issues/136446": {
+    "source": "GitHub (dotnet/runtime)",
+    "title": "Microsoft Security Advisory CVE-2026-111497 | .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+    "first_seen": "2026-10-25T19:15:59.040612+00:00"
+  },
+  "https://github.com/dotnet/announcements/issues/493": {
+    "source": "GitHub (dotnet/announcements)",
+    "title": "Microsoft Security Advisory CVE-2026-70197 | .NET and Visual Studio Remote Code Execution Vulnerability | October 25, 2026 OOB update",
+    "first_seen": "2026-10-25T19:15:59.040612+00:00"
+  },
+  "https://github.com/dotnet/runtime/issues/136445": {
+    "source": "GitHub (dotnet/runtime)",
+    "title": "Microsoft Security Advisory CVE-2026-70197 | .NET and Visual Studio Remote Code Execution Vulnerability | October 25, 2026 OOB update",
+    "first_seen": "2026-10-25T19:15:59.040612+00:00"
+>>>>>>> Stashed changes
   }
 }
