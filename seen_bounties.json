@@ -373,5 +373,15 @@
     "source": "GitHub (Bendako/next-starter-script)",
     "title": "[Hosted MCP] Polar adapter + webhooks",
     "first_seen": "2026-10-24T17:43:43.286893+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2238": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty]Swap getBestAmountOut quotes on 100% of the input while execution swaps 99% (origin is never passed on the quote path)",
+    "first_seen": "2026-10-25T13:27:24.618621+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2237": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] verifyEdOnDestination returns false when the recipient would end up at exactly the existential deposit",
+    "first_seen": "2026-10-25T13:27:24.618621+00:00"
   }
 }
