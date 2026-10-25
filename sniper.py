@@ -40,7 +40,7 @@ BLACKLIST_USERS = {
     'gospelsam019', 'neatlogs', 'xaviercallens', 'teslims2', 'axalnetwork',
     'myzubster-ecosystem', 'credenceorg', 'dmavs412', '96loveslife',
     'neziahtech', 'riteshekbote', 'auscaster', 'rroland10', 'guyue-arch',
-    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek', 'litang9', 'secopsnews', 'roam-game-org', 'securebananalabs', 'era-projects', 'xhtoken', 'openobserve'
+    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek', 'litang9', 'secopsnews', 'roam-game-org', 'securebananalabs', 'era-projects', 'xhtoken', 'openobserve', 'paraspell', 'aomediacodec', 'basedhardware', 'zigzagboi1', 'sybil-solutions', 'tenstorrent', 'dotnet'
 }
 
 BLACKLIST_TITLE_KEYWORDS = [
@@ -55,7 +55,7 @@ BLACKLIST_TITLE_KEYWORDS = [
     'cve disclosure', 'security.md', 'bug bounty scope', 'bounty-escrow',
     'proposal for @', '$hive', 'hivemind', 'claim your bounty spot',
     'proposal', 'proposed', 'bounty proposal', 'outbound link', 'link report',
-    'broken link', 'dsh-', 'dsh_', 'big_model_radar'
+    'broken link', 'dsh-', 'dsh_', 'big_model_radar', 'security advisory', 'advisory cve', 'vulnerability'
 ]
 
 repo_star_cache = {}
