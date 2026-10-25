@@ -383,5 +383,40 @@
     "source": "GitHub (paraspell/xcm-tools)",
     "title": "[Bug bounty] verifyEdOnDestination returns false when the recipient would end up at exactly the existential deposit",
     "first_seen": "2026-10-25T13:27:24.618621+00:00"
+  },
+  "https://github.com/AOMediaCodec/SVT-AV1/issues/2815": {
+    "source": "GitHub (AOMediaCodec/SVT-AV1)",
+    "title": "High Profile/4:4:4 support",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2304": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Swap with AMOUNT_ALL ('ALL') crashes in normalizeAmountAll and SwapBuilder.amount() double-scales bigint amounts",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2294": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Hydration dry-run bypasses minting due to unhandled currencyId shape in transform",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2285": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] AssetHub swaps crash with unhandled RangeError (NaN BigInt) when slippagePct is omitted or invalid",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2280": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Omitted slippagePct crashes AssetHub swaps with a raw NaN RangeError instead of a validation error",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2276": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] Dedot transform() mangles string numeric currency_id in multi-key objects",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
+  },
+  "https://github.com/paraspell/xcm-tools/issues/2275": {
+    "source": "GitHub (paraspell/xcm-tools)",
+    "title": "[Bug bounty] PAPI transform() mangles string numeric currency_id in multi-key objects",
+    "first_seen": "2026-10-25T17:59:46.653859+00:00"
   }
 }
