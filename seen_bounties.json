@@ -28,5 +28,25 @@
     "source": "GitHub (matiaszanolli/ByroRedux)",
     "title": "TD2-2026-10-25-04: \"how many of base form X does this inventory hold\" is hand-spelled at seven production sites (three added by the crime/jail work) plus four test copies",
     "first_seen": "2026-10-26T02:21:57.228627+00:00"
+  },
+  "https://github.com/pollinations/pollinations/issues/18462": {
+    "source": "GitHub (pollinations/pollinations)",
+    "title": "issue 82 \u2014 app-approval bounty misrouting: the free-text Quest field on any app submission closes and pays out ANY open POLLEN-QUEST issue when a maintainer approves the app (no quest-type, fulfillment, or linkage check anywhere in the chain);",
+    "first_seen": "2026-10-26T08:17:40.607565+00:00"
+  },
+  "https://github.com/worknenjoy/gitpay/issues/1612": {
+    "source": "GitHub (worknenjoy/gitpay)",
+    "title": "[Bug]: Mass assignment in PUT /wallets/orders/{id} allows any authenticated user to credit a wallet without paying",
+    "first_seen": "2026-10-26T08:17:40.607565+00:00"
+  },
+  "https://github.com/worknenjoy/gitpay/issues/1611": {
+    "source": "GitHub (worknenjoy/gitpay)",
+    "title": "[Bug]: Broken access control in POST /tasks/payments allows any authenticated user to create an arbitrary Stripe transfer",
+    "first_seen": "2026-10-26T08:17:40.607565+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/raptorx-research-challenge-ask-better-questions-find-better-alpha": {
+    "source": "Superteam Earn",
+    "title": "[125 USDC] RaptorX Research Challenge: Ask Better Questions. Find Better Alpha.",
+    "first_seen": "2026-10-26T08:17:40.607565+00:00"
   }
 }
