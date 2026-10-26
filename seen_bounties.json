@@ -23,5 +23,10 @@
     "source": "GitHub (doomsday-network/doomsday)",
     "title": "[ESCROW BOUNTY] \ud83c\udf10 1,000 DOOM ($wDOOM on Base) \u2014 Run a Stealth P2P Validator Peer (run_validator_peer.py) & Mine 1 Pool Share",
     "first_seen": "2026-10-25T22:56:30.568216+00:00"
+  },
+  "https://github.com/matiaszanolli/ByroRedux/issues/6363": {
+    "source": "GitHub (matiaszanolli/ByroRedux)",
+    "title": "TD2-2026-10-25-04: \"how many of base form X does this inventory hold\" is hand-spelled at seven production sites (three added by the crime/jail work) plus four test copies",
+    "first_seen": "2026-10-26T02:21:57.228627+00:00"
   }
 }
