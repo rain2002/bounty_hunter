@@ -58,5 +58,45 @@
     "source": "GitHub (pollinations/pollinations)",
     "title": "Account deletion cascades the community_endpoint rows but orphans every code agent's deployed Workers script in the CODE_AGENTS dispatch namespace forever",
     "first_seen": "2026-10-26T15:38:35.138041+00:00"
+  },
+  "https://github.com/alextitonis/fly.ai/issues/20": {
+    "source": "GitHub (alextitonis/fly.ai)",
+    "title": "Lighthouse 90+ (mobile) on home and token pages",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/alextitonis/fly.ai/issues/19": {
+    "source": "GitHub (alextitonis/fly.ai)",
+    "title": "README intro for newcomers",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/alextitonis/fly.ai/issues/18": {
+    "source": "GitHub (alextitonis/fly.ai)",
+    "title": "Press kit page (docs/press.html)",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/alextitonis/fly.ai/issues/17": {
+    "source": "GitHub (alextitonis/fly.ai)",
+    "title": "Add JSON-LD structured data to the main pages",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/alextitonis/fly.ai/issues/16": {
+    "source": "GitHub (alextitonis/fly.ai)",
+    "title": "Native-speaker review of site translations (zh-Hans, zh-Hant, ko, tr, es)",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/alextitonis/fly.ai/issues/15": {
+    "source": "GitHub (alextitonis/fly.ai)",
+    "title": "Unique share cards for every main page",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/worknenjoy/gitpay/issues/1623": {
+    "source": "GitHub (worknenjoy/gitpay)",
+    "title": "[Bug]: Missing ownership check in PUT /tasks/{id}/assignment/remove allows any authenticated user to unassign any task",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://github.com/worknenjoy/gitpay/issues/1622": {
+    "source": "GitHub (worknenjoy/gitpay)",
+    "title": "[Bug]: IDOR in PUT /wallets/{id} allows any authenticated user to modify another user's wallet",
+    "first_seen": "2026-10-26T22:06:59.753670+00:00"
   }
 }
