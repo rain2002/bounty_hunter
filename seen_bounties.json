@@ -48,5 +48,15 @@
     "source": "Superteam Earn",
     "title": "[125 USDC] RaptorX Research Challenge: Ask Better Questions. Find Better Alpha.",
     "first_seen": "2026-10-26T08:17:40.607565+00:00"
+  },
+  "https://github.com/vllm-project/vllm-omni/issues/9423": {
+    "source": "GitHub (vllm-project/vllm-omni)",
+    "title": "[ROCm][Follow-up] Re-enable AITER GroupNorm for HunyuanImage3 after fixed AITER is consumed",
+    "first_seen": "2026-10-26T15:38:35.138041+00:00"
+  },
+  "https://github.com/pollinations/pollinations/issues/18506": {
+    "source": "GitHub (pollinations/pollinations)",
+    "title": "Account deletion cascades the community_endpoint rows but orphans every code agent's deployed Workers script in the CODE_AGENTS dispatch namespace forever",
+    "first_seen": "2026-10-26T15:38:35.138041+00:00"
   }
 }
