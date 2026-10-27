@@ -98,5 +98,10 @@
     "source": "GitHub (worknenjoy/gitpay)",
     "title": "[Bug]: IDOR in PUT /wallets/{id} allows any authenticated user to modify another user's wallet",
     "first_seen": "2026-10-26T22:06:59.753670+00:00"
+  },
+  "https://earn.superteam.fun/listings/bounty/write-an-original-science-fiction-novel-on-sempai-hq": {
+    "source": "Superteam Earn",
+    "title": "[10 USDC] Write an original science fiction novel on Sempai HQ.",
+    "first_seen": "2026-10-27T15:02:06.155684+00:00"
   }
 }
