@@ -123,5 +123,15 @@
     "source": "Superteam Earn",
     "title": "[200 USDC] Create Content About KriptoK \u00b7 200 USDC Creator Challenge",
     "first_seen": "2026-10-28T11:51:35.918793+00:00"
+  },
+  "https://github.com/opensro-dev/opensro/issues/2028": {
+    "source": "GitHub (opensro-dev/opensro)",
+    "title": "tick: player skill paths commit SQLite synchronously on the tick (~12% of tick CPU)",
+    "first_seen": "2026-10-28T17:39:42.635674+00:00"
+  },
+  "https://github.com/matiaszanolli/ByroRedux/issues/6478": {
+    "source": "GitHub (matiaszanolli/ByroRedux)",
+    "title": "OBL-D5-2026-10-27-01: Fallout-only opcodes tagged `Games::Any` shadow Oblivion's `IsPlayerInJail` (0x10ab) and `CloseCurrentOblivionGate` (0x10c0)",
+    "first_seen": "2026-10-28T17:39:42.635674+00:00"
   }
 }
