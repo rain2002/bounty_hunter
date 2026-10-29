@@ -133,5 +133,10 @@
     "source": "GitHub (matiaszanolli/ByroRedux)",
     "title": "OBL-D5-2026-10-27-01: Fallout-only opcodes tagged `Games::Any` shadow Oblivion's `IsPlayerInJail` (0x10ab) and `CloseCurrentOblivionGate` (0x10c0)",
     "first_seen": "2026-10-28T17:39:42.635674+00:00"
+  },
+  "https://github.com/VlcekM/MeitouClient/issues/119": {
+    "source": "GitHub (VlcekM/MeitouClient)",
+    "title": "Feedback: I was stopped and held at sword point but they still hit me even after i paid",
+    "first_seen": "2026-10-29T11:58:58.693397+00:00"
   }
 }
