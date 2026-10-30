@@ -143,5 +143,15 @@
     "source": "GitHub (riteshbonthalakoti/HELPDESK.AI)",
     "title": "bounty: [level:critical] Agentic Self-Healing Actions Engine: Sandboxed Playbook Execution for Automated Deflection",
     "first_seen": "2026-10-29T18:07:06.647967+00:00"
+  },
+  "https://github.com/SWU-Karabast/forceteki/issues/3055": {
+    "source": "GitHub (SWU-Karabast/forceteki)",
+    "title": "Unique upgrades and pilots that read `parentCard` throw \"Null-like object value: null\" when the unique rule defeats the copy just played (Iden Versio, Luke's / Vader's / Ahsoka's Padawan / Darth Maul's / Qui-Gon Jinn's / Mace Windu's Lightsabers, Chewbacca's Bowcaster, The Mandalorian's Rifle, Boba Fett)",
+    "first_seen": "2026-10-30T00:30:50.385596+00:00"
+  },
+  "https://github.com/Agenta-AI/agenta/issues/7914": {
+    "source": "GitHub (Agenta-AI/agenta)",
+    "title": "Automation instructions that start with \"/\" or \"$\" reach the agent as empty text",
+    "first_seen": "2026-10-30T00:30:50.385596+00:00"
   }
 }
