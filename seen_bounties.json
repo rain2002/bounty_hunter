@@ -153,5 +153,30 @@
     "source": "GitHub (Agenta-AI/agenta)",
     "title": "Automation instructions that start with \"/\" or \"$\" reach the agent as empty text",
     "first_seen": "2026-10-30T00:30:50.385596+00:00"
+  },
+  "https://github.com/ruohong2018/ruohong2018.github.io/issues/1360": {
+    "source": "GitHub (ruohong2018/ruohong2018.github.io)",
+    "title": "[\u6bcf\u65e5\u4fe1\u606f\u6d41] 2026-10-30",
+    "first_seen": "2026-10-30T09:18:36.528951+00:00"
+  },
+  "https://github.com/chainreactors/picker/issues/1410": {
+    "source": "GitHub (chainreactors/picker)",
+    "title": "[\u6bcf\u65e5\u4fe1\u606f\u6d41] 2026-10-30",
+    "first_seen": "2026-10-30T09:18:36.528951+00:00"
+  },
+  "https://github.com/BruceFeIix/picker/issues/2778": {
+    "source": "GitHub (BruceFeIix/picker)",
+    "title": "[\u6bcf\u65e5\u4fe1\u606f\u6d41] 2026-10-30",
+    "first_seen": "2026-10-30T09:18:36.528951+00:00"
+  },
+  "https://github.com/faisalkindi/CrimsonDesert-UltimateModsManager/issues/458": {
+    "source": "GitHub (faisalkindi/CrimsonDesert-UltimateModsManager)",
+    "title": "[Bug]: Game 2.04 (build 1.0.0.3392): PAMT index finds 0 keys, all JSON mods skipped, 0.papgt rewritten to 2 entries",
+    "first_seen": "2026-10-30T09:18:36.528951+00:00"
+  },
+  "https://github.com/Tyaoo/picker/issues/1557": {
+    "source": "GitHub (Tyaoo/picker)",
+    "title": "[\u6bcf\u65e5\u4fe1\u606f\u6d41] 2026-10-30",
+    "first_seen": "2026-10-30T09:18:36.528951+00:00"
   }
 }
