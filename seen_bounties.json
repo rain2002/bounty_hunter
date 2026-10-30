@@ -178,5 +178,10 @@
     "source": "GitHub (Tyaoo/picker)",
     "title": "[\u6bcf\u65e5\u4fe1\u606f\u6d41] 2026-10-30",
     "first_seen": "2026-10-30T09:18:36.528951+00:00"
+  },
+  "https://github.com/mautic/mautic/issues/18017": {
+    "source": "GitHub (mautic/mautic)",
+    "title": "Saving Configuration writes the monitored inbox password to local.php unescaped, so a password with `%` takes the whole site offline",
+    "first_seen": "2026-10-30T17:28:50.940234+00:00"
   }
 }
