@@ -183,5 +183,10 @@
     "source": "GitHub (mautic/mautic)",
     "title": "Saving Configuration writes the monitored inbox password to local.php unescaped, so a password with `%` takes the whole site offline",
     "first_seen": "2026-10-30T17:28:50.940234+00:00"
+  },
+  "https://github.com/windy10v10ai/game/issues/2676": {
+    "source": "GitHub (windy10v10ai/game)",
+    "title": "\u7535\u8111 AI \u6162\u601d\u8003\uff1a\u5148\u91cf\u666e\u901a\u5c40\u5360\u6bd4\uff0c\u518d\u5206\u6bb5\u8ba1\u65f6\u4f18\u5316",
+    "first_seen": "2026-10-30T21:48:22.437196+00:00"
   }
 }
