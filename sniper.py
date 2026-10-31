@@ -4,6 +4,7 @@ import time
 import requests
 import smtplib
 import json
+import re
 from datetime import datetime, timezone, timedelta
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -40,7 +41,7 @@ BLACKLIST_USERS = {
     'gospelsam019', 'neatlogs', 'xaviercallens', 'teslims2', 'axalnetwork',
     'myzubster-ecosystem', 'credenceorg', 'dmavs412', '96loveslife',
     'neziahtech', 'riteshekbote', 'auscaster', 'rroland10', 'guyue-arch',
-    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek', 'litang9', 'secopsnews', 'roam-game-org', 'securebananalabs', 'era-projects', 'xhtoken', 'openobserve', 'paraspell', 'aomediacodec', 'basedhardware', 'zigzagboi1', 'sybil-solutions', 'tenstorrent', 'dotnet', 'riteshbonthalakoti'
+    'huynhnhatquandongnai-source', 'dragonire9', 'airdropia', 'taxueseek', 'litang9', 'secopsnews', 'roam-game-org', 'securebananalabs', 'era-projects', 'xhtoken', 'openobserve', 'paraspell', 'aomediacodec', 'basedhardware', 'zigzagboi1', 'sybil-solutions', 'tenstorrent', 'dotnet', 'riteshbonthalakoti', 'ruohong2018', 'chainreactors', 'brucefeiix', 'tyaoo', 'faisalkindi', 'swu-karabast', 'windy10v10ai', 'agenta-ai', 'mautic', 'alfrexo95', 'rohank143'
 }
 
 BLACKLIST_TITLE_KEYWORDS = [
@@ -55,7 +56,7 @@ BLACKLIST_TITLE_KEYWORDS = [
     'cve disclosure', 'security.md', 'bug bounty scope', 'bounty-escrow',
     'proposal for @', '$hive', 'hivemind', 'claim your bounty spot',
     'proposal', 'proposed', 'bounty proposal', 'outbound link', 'link report',
-    'broken link', 'dsh-', 'dsh_', 'big_model_radar', 'security advisory', 'advisory cve', 'vulnerability', 'gssoc'
+    'broken link', 'dsh-', 'dsh_', 'big_model_radar', 'security advisory', 'advisory cve', 'vulnerability', 'gssoc', '每日信息流', '每日安全资讯', 'picker', 'bounty hunter', 'digest', 'feed', 'cve-'
 ]
 
 repo_star_cache = {}
@@ -74,11 +75,14 @@ def get_repo_stars(repo_full_name, headers):
     repo_star_cache[repo_full_name] = 0
     return 0
 
+CASH_TITLE_REGEX = re.compile(r'\[\s*(?:bounty\s*)?\$[0-9]{2,5}\s*\]|\b(?:bounty\s*:\s*\$[0-9]{2,5})\b', re.IGNORECASE)
+
 def is_valid_github_bounty(item, headers):
     repo = '/'.join(item.get('repository_url', '').split('/')[-2:])
     owner = repo.split('/')[0].lower() if '/' in repo else ''
     author = (item.get('user') or {}).get('login', '').lower()
-    title = item.get('title', '').lower()
+    raw_title = item.get('title', '')
+    title_lower = raw_title.lower()
     body = (item.get('body') or '').lower()
 
     # 1. Filter blacklisted user accounts & bot mirrors (owner or issue author)
@@ -87,12 +91,12 @@ def is_valid_github_bounty(item, headers):
     if author in BLACKLIST_USERS:
         return False, f"Blacklisted author: {author}"
 
-    # 2. Filter blacklisted keywords in title (proposals, reports, junk)
-    if any(kw in title for kw in BLACKLIST_TITLE_KEYWORDS):
+    # 2. Filter blacklisted keywords in title (proposals, reports, junk, news streams)
+    if any(kw in title_lower for kw in BLACKLIST_TITLE_KEYWORDS):
         return False, "Blacklisted keyword in title"
 
     # 3. Filter non-cash 'points' or unverified token rewards
-    if 'points' in body or '$hive' in body or '$hive' in title:
+    if 'points' in body or '$hive' in body or '$hive' in title_lower:
         return False, "Non-cash points/unlisted token reward"
 
     # 4. Check for verified bot indicators (Algora, Polar, Opire)
@@ -104,12 +108,19 @@ def is_valid_github_bounty(item, headers):
         ('app.opire.dev/' in body and any(k in body for k in ['bounty', 'opire[bot]']))
     )
 
-    # 5. Quality gate: repository must have >= 20 stars (unless verified escrow bot is present)
+    # 5. Explicit cash bounty tag verification (e.g. "[$50]", "[$100]", "[Bounty $250]")
+    has_cash_title = bool(CASH_TITLE_REGEX.search(raw_title))
+
+    # Strict Gate: Must have verified escrow bot OR an explicit cash bounty tag
+    if not has_escrow_bot and not has_cash_title:
+        return False, "No verified escrow bot or explicit [$XX] cash bounty tag"
+
+    # 6. Quality gate: repository must have >= 20 stars (unless verified escrow bot is present)
     stars = get_repo_stars(repo, headers)
     if stars < 20 and not has_escrow_bot:
         return False, f"Unverified repo ({stars} stars)"
 
-    return True, f"Verified ({stars} stars)"
+    return True, f"Verified cash bounty ({stars} stars)"
 
 def get_github_bounties(hours=4):
     """
@@ -121,10 +132,10 @@ def get_github_bounties(hours=4):
     
     # Target actual cash bounties and escrow platforms
     queries = [
-        f'bounty "$50" is:issue state:open created:>={cutoff_time}',
-        f'bounty "$100" is:issue state:open created:>={cutoff_time}',
-        f'"console.algora.io" is:issue state:open created:>={cutoff_time}',
-        f'"polar.sh" is:issue state:open created:>={cutoff_time}',
+        f'label:bounty state:open created:>={cutoff_time}',
+        f'label:paid state:open created:>={cutoff_time}',
+        f'label:reward state:open created:>={cutoff_time}',
+        f'"[bounty" in:title is:issue state:open created:>={cutoff_time}',
         f'"app.opire.dev" is:issue state:open created:>={cutoff_time}'
     ]
     
